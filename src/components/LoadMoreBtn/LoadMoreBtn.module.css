@@ -1,0 +1,13 @@
+.loadBtn {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  background-color: rgb(9, 150, 169);
+}
+
+.loadBtn:hover {
+  background-color: #44b5b9;
+  color: #ffff;
+}
