@@ -1,45 +1,55 @@
 .overlay {
-  inset: 0;
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.509);
+  inset: 0px;
+  background-color: rgba(199, 232, 242, 0.75);
 }
 
-.modalContent {
+.modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  padding: 10px;
-  border-radius: 5px;
-  z-index: 1000;
-  width: auto;
-  max-width: 90%;
-  height: auto;
-  max-height: 90%;
-  overflow: auto;
-}
-
-.button {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
+  inset: 50% auto auto 50%;
   border: none;
-  background-color: rgba(5, 180, 186, 0.5);
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 1002;
+  background: transparent;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  max-width: 100vh;
+  max-height: 100vh;
+  transition: all 0.25s ease-in-out;
 }
 
-.content {
-  margin: auto;
+.btnCloseModal {
+  position: relative;
+  top: 50%;
+  left: 48%;
+  border: none;
+  background-color: transparent;
+}
+
+.imageContainer {
+  position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .image {
-  overflow: hidden;
+  max-width: 100%;
+  max-height: 80vh;
+}
+
+.imageInfo {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  color: rgb(3, 3, 26);
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  background-color: rgba(216, 240, 247, 0.5);
 }
